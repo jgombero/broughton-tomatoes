@@ -4,12 +4,12 @@ import { SearchBar } from './Searchbar';
 
 export function Navbar() {
   return (
-    <div className="navbar bg-base-300 rounded-lg">
+    <div className="navbar rounded-lg bg-red-400">
       {/* Home/Nav */}
       <div className="navbar-start">
         {/* Nav */}
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div tabIndex={0} role="button" className="btn btn-circle btn-ghost">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -27,10 +27,9 @@ export function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-300 p-2 shadow"
           >
             <li>
-              {/* Links are like anchors but Next knows not to refetch all files on render :) */}
               <Link href="recommendations">Recommendations</Link>
             </li>
           </ul>
@@ -50,7 +49,7 @@ export function Navbar() {
       {/* Profile */}
       <div className="navbar-end">
         <div className="dropdown dropdown-end">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+          <div tabIndex={0} role="button" className="avatar btn btn-circle btn-ghost">
             <div className="w-10 rounded-full">
               <img
                 alt="Avatar"
@@ -60,7 +59,7 @@ export function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
             <li>
               <Link href="profile">Profile</Link>

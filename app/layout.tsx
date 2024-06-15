@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon.ico" sizes="any" />
       </Head>
 
-      <body className={inter.className}>
+      <body className={(inter.className, 'bg-red-50')}>
         <Navbar />
 
         {children}

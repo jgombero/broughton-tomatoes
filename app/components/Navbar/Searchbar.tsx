@@ -11,7 +11,7 @@ export function SearchBar() {
     e.preventDefault();
 
     if (search_query.trim() !== '') {
-      router.push(`/search-results?query=${encodeURIComponent(search_query)}`);
+      router.push(`/search?query=${encodeURIComponent(search_query)}`);
     }
   }
 
@@ -23,7 +23,7 @@ export function SearchBar() {
           placeholder="Search"
           value={search_query}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="input input-bordered w-24 md:w-auto"
+          className="input input-bordered w-24 bg-red-50 md:w-auto"
         />
       </form>
     </div>
